@@ -7,9 +7,9 @@ int main()
 
     cout << "Enter the number for which you want to find out the factorial: ";
     int N, n, i, h, o, v;
-    int r[3000];
+    int r[3001];
     cin>> N;
-    if (N>3000)
+    if (N>1143)
     {
         cout << "Sorry, we can't calculate such a large factorial value.";
         return 0;
@@ -29,24 +29,21 @@ int main()
         for (i=0; i<o; i++)
         {
             v=(r[i]*n)+h;
-            r[i]=v%10;
+            if (i<o+1) r[i]=v%10;
             h=v/10;
         }
         while(h>0)
-        {
-            r[o++]=h%10;
+    {
+          if (i<o+1) r[o++]=h%10;
             h/=10;
-        }
+    }
     }
     cout<<N<<"!=" ;
-    for(i=o-1;i>0;i--)
+    for(i=o-1;i>=0;i--)
          cout<<r[i];
-         cout<<r[0]<<endl;
+
 
 }
-
-
-
 
 
 
