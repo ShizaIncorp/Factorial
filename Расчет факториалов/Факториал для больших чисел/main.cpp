@@ -5,7 +5,11 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    int N, n, i, h, o, v;
+    int j, b;
+    cout << " Введите число, которое будет указывать на то, сколько вы хотите раз посчитать факториал"<< endl;
+    cin>> j;
+    for ( b=1; b<=j; b++) {
+        int N, n, i, h, o, v;
     int r[100000];
 
     cout << "Введите число, для которого вы хотите узнать факториал: ";
@@ -38,11 +42,15 @@ int main()
             h/=10;
         }
     }
-    cout<<N<<"!=";
-    for(i=o-1;i>=0;i--)
+    cout<<N<<"!=" ;
+    for(i=o-1;i>0;i--)
          cout<<r[i];
+         cout<<r[0]<<endl;
 
-    return 0;
+
 }
+
+    }
+
 
 
