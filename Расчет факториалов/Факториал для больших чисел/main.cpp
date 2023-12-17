@@ -9,12 +9,13 @@ int main()
     int N, n, i, h, o, v;
     int r[3000];
     cin>> N;
-    if (N>3000){
+    if (N>3000)
+    {
         cout << "Sorry, we can't calculate such a large factorial value.";
         return 0;
     }
     if (N<0)
-        {
+    {
         cout<< "We cannot calculate the factorial value of a negative number";
         return 0;
     }
