@@ -4,29 +4,18 @@ using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
-    int b;
-    long int j;
-    cout << " Введите число, которое будет указывать на то, сколько вы хотите раз посчитать факториал"<< endl;
-    cin>> j;
-    if (j>214483647)
-    {
-        cout<<"Извините, невозможно выполнить сколько операций";
-        return 0;
-    }
 
-            for ( b=1; b<=j; b++) {
-                cout << "Введите число, для которого вы хотите узнать факториал: ";
+    cout << "Enter the number for which you want to find out the factorial: ";
     int N, n, i, h, o, v;
-    int r[100000];
+    int r[3000];
     cin>> N;
-    if (N>100000){
-        cout << "Извините, мы не можем рассчитать такое большое значение факториала";
+    if (N>3000){
+        cout << "Sorry, we can't calculate such a large factorial value.";
         return 0;
     }
     if (N<0)
         {
-        cout<< "Мы не можем рассчитать значение факториала отрицательного числа";
+        cout<< "We cannot calculate the factorial value of a negative number";
         return 0;
     }
 
@@ -55,7 +44,7 @@ int main()
 
 }
 
-    }
+
 
 
 
